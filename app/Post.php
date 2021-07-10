@@ -32,6 +32,6 @@ class Post extends Model
 
     public function getGetExcerptAttribute()
     {
-        return 'Unknown attr';
+        return substr($this->body, 0, 140);
     }
 }
