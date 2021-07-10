@@ -11,9 +11,17 @@
 |
 */
 
-Route::get('/', [App\Http\Controllers\PageController::class, 'posts']);
-Route::get('blog/{post}', [App\Http\Controllers\PageController::class, 'post'])->name('post');
+// use App\Http\Controllers\PageController;
+
+// use App\Http\Controllers\Backend\PostController;
+
+Route::get('/', [PageController::class, 'posts']);
+Route::get('blog/{post}', [PageController::class, 'post'])->name('post');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('posts', 'Backend\PostController')
+    ->middleware('auth')
+    ->except('show');
