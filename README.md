@@ -70,3 +70,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Packages
 - composer require laravel/ui="1.*" --dev
+- composer require cviebrock/eloquent-sluggable="6.*"
