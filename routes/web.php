@@ -11,7 +11,7 @@
 |
 */
 
-// use App\Http\Controllers\PageController;
+use App\Http\Controllers\PageController;
 
 // use App\Http\Controllers\Backend\PostController;
 
