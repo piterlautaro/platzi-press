@@ -16,7 +16,7 @@
                         </div>
                     @endif
 
-                    <form action="{{ route('posts.store')}}" method="POST" enctrype="multipart/form-data">
+                    <form action="{{ route('posts.store')}}" method="POST" enctype="multipart/form-data">
 
                         <div class="form-group">
                             <label>Título (*)</label>

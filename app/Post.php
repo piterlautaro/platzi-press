@@ -11,6 +11,15 @@ class Post extends Model
     use Sluggable;
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'title', 'image', 'body', 'slug', 'iframe', 'user_id'
+    ];
+
+    /**
      * Return the sluggable configuration array for this model.
      *
      * @return array
